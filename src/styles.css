@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+.mat-form-field-prefix,
+.mat-form-field-suffix {
+  align-self: center !important;
+}
+.input__file .mat-form-field-infix {
+  width: 1rem !important;
+}

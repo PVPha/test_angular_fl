@@ -1,0 +1,26 @@
+<div class="container">
+  <div>
+    <h2>Attestation de mise sous tutelle</h2>
+    <p>L'import de ce document est facultatif.</p>
+    <mat-form-field class="input__file">
+      <div matPrefix style="align-self: center" ngClass="{{ uploaded }}">
+        <span id="icon_tmp"></span>
+        <mat-icon [hidden]="!show">done</mat-icon>
+      </div>
+      <input matInput type="text" readonly="true" value="" />
+      <div matSuffix>
+        <span class="file__name">{{ nameFile }}</span>
+        <span class="before__upload" [hidden]="show">
+          <a (click)="openDialogUpload()">Ajouter un fichier</a>
+          ou glisser-déposer votre fichier
+        </span>
+        <span class="after__upload" [hidden]="!show">
+          <button mat-button><mat-icon>visibility</mat-icon> Visualiser</button>
+          <button mat-button (click)="delete()">
+            <mat-icon>delete_forever</mat-icon> Supprimer
+          </button>
+        </span>
+      </div>
+    </mat-form-field>
+  </div>
+</div>
